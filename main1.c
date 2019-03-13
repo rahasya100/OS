@@ -22,3 +22,10 @@ main()
          {printf("Enter  it again");
           goto a
         }
+
+ printf("Enter the array elements:-");                   //count array elements
+ array[0]=head;
+ for(i=1;i<x;i++)
+
+    {
+ b:
