@@ -1,6 +1,3 @@
-#include<stdio.h>
-#include<math.h>
-#include<iostream>
 using namespace std;
 main()
 {
@@ -29,3 +26,25 @@ main()
 
     {
  b:
+    printf("\nEnter the %d element of the array ",i);
+    scanf("%d",&array[i]);
+    if(array[i]>=max||array[i]<=0)                        //conditional statement
+        {printf("enter again");
+          goto b;
+        }
+
+
+    }
+
+    for (i=0;i<x;i++)
+                                            //for max no of sylinders
+    {   for(j=i+1;j<x;j++)
+         {
+            if(array[i]>array[j])
+            {  temp=array[i];
+               array[i]=array[j];
+               array[j]=temp;
+            }
+
+          }
+   }
