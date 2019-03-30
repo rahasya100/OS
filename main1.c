@@ -48,3 +48,13 @@ main()
 
           }
    }
+
+ for(j=0;j<x;j++)
+   {
+     if(array[j]==head)
+        {
+		  dif=cyd(array[j+1]-array[j]);                       //print if max
+           total+=dif;
+           printf("Steps covered are %d \n",array[j],array[j+1],dif);
+                if(j==x-1)
+				  {
