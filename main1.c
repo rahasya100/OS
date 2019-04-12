@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<math.h>
+#include<iostream>
 using namespace std;
 main()
 {
@@ -58,3 +61,12 @@ main()
            printf("Steps covered are %d \n",array[j],array[j+1],dif);
                 if(j==x-1)
 				  {
+	                  dif=cyd(array[x-1]-array[0]);
+	                  printf("Steps covered  are %d \n",array[0],array[x-1],dif);            //print if min
+	                  total+=dif;
+	                   j=0;
+	               }
+        }
+    }
+ printf("Total steps  which is being taken are %d",total);
+}
